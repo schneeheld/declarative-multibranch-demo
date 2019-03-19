@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('DeclarativeMultiBranch') {
             steps {
-                echo 'Hello World'
+                echo 'Master branch'
                 script {
                     def students = ['Anne', 'Emily', 'Julie']
                     for (int i = 0; i < students.size(); ++i) {
