@@ -5,7 +5,7 @@ pipeline {
 //    def job="${env.JOB_NAME}" 
 //    def jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
 //    ws("ws/"+jobName){
-    customWorkspace "MyFixedLocation/MyPipelineName_${BRANCH_NAME}"
+//    customWorkspace "MyFixedLocation/MyPipelineName_${BRANCH_NAME}"
     stages {
         stage('DeclarativeMultiBranch') {
             steps {
