@@ -10,7 +10,7 @@ pipeline {
         stage('DeclarativeMultiBranch') {
             steps {
                echo 'Master branch'
-               ws('/tmp') {
+               ws('/var/jenkins_home/workspace/zd72694_master-ABCDE') {
                     sh 'pwd'
                 
                 script {
