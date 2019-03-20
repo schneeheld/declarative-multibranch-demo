@@ -1,7 +1,9 @@
 pipeline {
     agent any
-def job="${env.JOB_NAME}" 
-def jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
+        environment {
+job="${env.JOB_NAME}" 
+jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
+    }
     stages {
         stage('DeclarativeMultiBranch') {
             steps {
