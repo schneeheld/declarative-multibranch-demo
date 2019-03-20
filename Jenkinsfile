@@ -10,7 +10,9 @@ pipeline {
         stage('DeclarativeMultiBranch') {
             steps {
                 echo 'Master branch'
-                
+                ws('/tmp') {
+                    sh 'pwd'
+                }
                 script {
                     def students = ['Anne', 'Emily', 'Julie']
                     for (int i = 0; i < students.size(); ++i) {
