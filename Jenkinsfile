@@ -1,7 +1,7 @@
 pipeline {
     agent any
         environment {
-job="${env.JOB_NAME}"."${env.BRANCH_NAME}"
+job="${env.JOB_NAME}.${env.BRANCH_NAME}"
 jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
     }
     stages {
