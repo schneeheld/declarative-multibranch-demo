@@ -9,14 +9,14 @@ jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
             steps {
                echo 'Master branch'
 
-               ws('/var/jenkins_home/workspace/'+jobName) {
+               // ws('/var/jenkins_home/workspace/'+jobName) {
                     script {
                         def names = ['Anne', 'Emily', 'Julie']
                         for (int i = 0; i < names.size(); ++i) {
                             echo "${names[i]}"
                         }
                     }
-                }
+               // }
             }
         }
     }
