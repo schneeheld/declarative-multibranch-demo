@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'seco-595' }
+    agent { label 'dec' }
         environment {
 job="${env.JOB_NAME}.${env.BRANCH_NAME}"
 jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
