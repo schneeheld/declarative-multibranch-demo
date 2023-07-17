@@ -15,8 +15,8 @@ pipeline {
                         }
                     }
                 sh 'printenv'
-                echo "test ${env.CHANGE_AUTHOR_DISPLAY_NAME} --- ${env.BUILD_USER_ID}"
-                echo "${env.CHANGE_ID}"
+                echo "BASH: test ${env.CHANGE_AUTHOR_DISPLAY_NAME} --- ${env.BUILD_USER_ID}"
+                echo "BASH: ${env.CHANGE_ID}"
                 println job
                 println jobName
                 echo "BASH: ${env.CHANGE_ID}"
