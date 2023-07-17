@@ -14,6 +14,9 @@ jobName= job.substring(job.lastIndexOf("/") + 1, job.length())
                             echo "${names[i]}"
                         }
                     }
+                sh 'printenv'
+                echo "test ${env.CHANGE_AUTHOR_DISPLAY_NAME} --- ${env.BUILD_USER_ID}"
+                echo "${env.CHANGE_ID}"
                }
           }
     }
